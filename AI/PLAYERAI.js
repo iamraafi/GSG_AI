@@ -28,7 +28,8 @@ function THINK(player,enemies,maplayout,end)
 			if(go>delay){
 				if(done){
 					hazards=genHazards(enemies, enemyArea);
-					Thinking(player, enemies, maplayout, end);
+					enemyArea = getEnemyArea(enemies, enemyArea);
+					Thinking(player, enemyArea, maplayout, end);
 				}
 			}
 			else
