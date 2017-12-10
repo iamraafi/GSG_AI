@@ -24,7 +24,7 @@ var process; // the current decision of the bot
 // This function is run during the game loop repeatedly.
 function THINK(player,enemies,maplayout,end)
 {		
-		if(process>50){
+		if(process>100){
 			if(go>delay){
 				if(done){
 					hazards=genHazards(enemies, enemyArea);
