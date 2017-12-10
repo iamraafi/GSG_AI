@@ -203,7 +203,7 @@ function genHazards(enemies, enemyArea){
 
 function computeG(parent, child){
 	if(isHazardous(child))
-		return parent.getG()+1000;
+		return parent.getG()+100000;
 	else
 		return parent.getG()+10;
 }
